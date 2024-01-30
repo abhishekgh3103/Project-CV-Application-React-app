@@ -1,0 +1,29 @@
+.generalDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8f5e9;
+  width: 100vw;
+  color: #4caf50;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #1b5e20;
+  padding: 10px;
+  margin: 0;
+  align-items: center;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: max-content;
+
+  gap: 5px;
+}
+
+.inputDiv input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c8e6c9;
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
