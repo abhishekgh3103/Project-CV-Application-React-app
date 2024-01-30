@@ -1,14 +1,25 @@
 import styles from "./buttons.module.css";
 
-export default function Buttons() {
+export default function Buttons({ infoDisplay, setInfoDisplay }) {
   return (
     <div className={styles.buttonDiv}>
-      <button type="submit" className={styles.submitButton}>
-        Submit
-      </button>
-      <button type="button" className={styles.editButton}>
-        Edit
-      </button>
+      {infoDisplay ? (
+        <button
+          type="button"
+          className={styles.editButton}
+          onClick={(e) => setInfoDisplay(false)}
+        >
+          Edit
+        </button>
+      ) : (
+        <button
+          type="submit"
+          className={styles.submitButton}
+          onClick={(e) => setInfoDisplay(true)}
+        >
+          Submit
+        </button>
+      )}
     </div>
   );
 }
